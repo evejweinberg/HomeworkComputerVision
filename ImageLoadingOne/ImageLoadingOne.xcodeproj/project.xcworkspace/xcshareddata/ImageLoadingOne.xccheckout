@@ -7,20 +7,16 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EB95215A-F38F-4BC2-86D7-3FDE0626D886</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ImageLoadingOne</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D4604D107C8B0628D481999E389D2984C0EED500</key>
-		<string>https://github.com/evejweinberg/SFPC.git</string>
 		<key>F2E287F906E82AC7E90B8946F4A3F1829C478391</key>
 		<string>https://github.com/evejweinberg/SFPC_Homework</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ImageLoadingOne/ImageLoadingOne.xcodeproj/project.xcworkspace</string>
+	<string>ImageLoadingOne/ImageLoadingOne.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D4604D107C8B0628D481999E389D2984C0EED500</key>
-		<string>../../../../SFPC_Weinberg</string>
 		<key>F2E287F906E82AC7E90B8946F4A3F1829C478391</key>
 		<string>../../..</string>
 	</dict>
@@ -39,14 +35,6 @@
 			<string>F2E287F906E82AC7E90B8946F4A3F1829C478391</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SFPC_Homework</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D4604D107C8B0628D481999E389D2984C0EED500</string>
-			<key>IDESourceControlWCCName</key>
-			<string>SFPC_Weinberg</string>
 		</dict>
 	</array>
 </dict>

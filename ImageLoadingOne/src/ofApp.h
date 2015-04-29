@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "Balls.h"
+#include "CCPix1.h"
 
 class ofApp : public ofBaseApp{
 
@@ -20,10 +21,12 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        ofImage art;
+    ofImage art;
     ofVideoPlayer STD;
+    ofColor colorvar;
 		
     Balls Balls;
+    CCPix1 CCPix1;
     ofColor myColor;
    
    

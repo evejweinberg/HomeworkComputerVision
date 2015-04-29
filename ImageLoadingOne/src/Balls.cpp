@@ -17,7 +17,7 @@ bEnd.set(ofGetWidth()/2, -1200);
 pct = 0;
     
     cloud.loadImage("cloud.png");
-    
+   
 }
 
 
@@ -41,13 +41,20 @@ void Balls::update(){
 void Balls::draw(){
     
     
-    for (int k = 0; k < 30; k ++) {
-    for (int j = 0; j < 30; j ++) {
-        ofSetColor(20);
-        cloud.draw(50*ofGetElapsedTimef()*j,300*k,214,91);
+    for (int k = 0; k < 10; k ++) {
+    for (int j = 0; j < 700; j ++) {
+        ofSetColor(0);
+        if (j % 2 == 0){
+        cloud.draw((70*ofGetElapsedTimef())+(j*500)-1000,600*k,214,91);
+        } else {
+           cloud.draw((70*ofGetElapsedTimef())+(j*500)-1000,600*k+300,214,91);
+        }
     }
-        
     }
+    
+
+
+    
     
     float x,y;
     ofPoint(0,0);
@@ -56,26 +63,19 @@ void Balls::draw(){
     
     float pctShaped =  powf(pct, .5);     //pct * pct;      ///powf(pct, 2);
     ofPoint mixPt = (1.0-pctShaped) * aStart + pctShaped * bEnd;
-    ofSetColor(80);
+    ofSetColor(0);
     ofCircle(mixPt, 450);
     
     ofSetColor(50);
     ofCircle(mixPt, 350);
     
-    ofSetColor(20);
+    ofSetColor(100);
+    ofCircle(mixPt, 200);
+    
+    ofSetColor(220);
     ofCircle(mixPt, 100);
     
-    ofSetColor(30);
-    ofCircle(mixPt, 50);
-    
-//    for (int i = 0; i < 20; i ++) {
-//        
-//        ofSetColor(30);
-//        ofCircle(300*i, ofGetElapsedTimef()*i*20, 20);
-//        ofSetColor(70);
-//        ofCircle(200*i, ofGetElapsedTimef()*i*20, 10);
-//
-//    }
+
     
     
 }
