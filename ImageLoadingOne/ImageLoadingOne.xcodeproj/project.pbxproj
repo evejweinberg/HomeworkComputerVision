@@ -63,6 +63,7 @@
 /* Begin PBXFileReference section */
 		0E11608E1AF162E300137DEB /* CCPix1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCPix1.cpp; sourceTree = "<group>"; };
 		0E11608F1AF162E300137DEB /* CCPix1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPix1.h; sourceTree = "<group>"; };
+		0E1160931AF178E400137DEB /* ofxOpenCv */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ofxOpenCv; path = src/ofxOpenCv; sourceTree = "<group>"; };
 		0E61FFA61AF0220300971AB8 /* Balls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Balls.cpp; sourceTree = "<group>"; };
 		0E61FFA71AF0220300971AB8 /* Balls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Balls.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				0E1160931AF178E400137DEB /* ofxOpenCv */,
 			);
 			name = addons;
 			sourceTree = "<group>";

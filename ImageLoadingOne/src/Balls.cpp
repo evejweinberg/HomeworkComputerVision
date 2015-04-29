@@ -17,24 +17,22 @@ bEnd.set(ofGetWidth()/2, -1200);
 pct = 0;
     
     cloud.loadImage("cloud.png");
-   
+  
+
+
 }
-
-
 
 //-----------------------------------------------------------------------
 void Balls::update(){
 
-  
     pct += 0.001;   // ie: pct = pct + 0.005
     
     if (pct > 1){
         pct = 0;
     }
+    
+
 }
-
-
-
 
 
 //-----------------------------------------------------------------------
@@ -75,7 +73,10 @@ void Balls::draw(){
     ofSetColor(220);
     ofCircle(mixPt, 100);
     
-
+    ofSetHexColor(0xffffff);
+    
+    
+    
     
     
 }

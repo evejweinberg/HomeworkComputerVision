@@ -10,6 +10,7 @@
 #define __ImageLoadingOne__Balls__
 #include "ofMain.h"
 
+
 #include <stdio.h>
 
 
@@ -27,8 +28,13 @@ public:
     ofImage cloud;
 
     float pct;
-//    
-//    Balls(); //constructor ??
+    
+
+    
+    
+
+    
+
 
 };
 
