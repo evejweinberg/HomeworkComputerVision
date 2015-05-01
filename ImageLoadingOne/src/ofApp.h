@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "Balls.h"
 #include "CCPix1.h"
+//#include "CCPix2.h"
 
 class ofApp : public ofBaseApp{
 
@@ -28,6 +29,7 @@ class ofApp : public ofBaseApp{
     Balls Balls;
     CCPix1 CCPix1;
     ofColor myColor;
+//    CCPix2 CCPix2;
    
    
     

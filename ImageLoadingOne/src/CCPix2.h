@@ -10,7 +10,8 @@
 
 
 
-class CCPix1 {
+
+class CCPix2 {
     
 public:
     void setup();
@@ -23,7 +24,7 @@ public:
     ofColor color;
     ofImage cloud;
     
-//      ofBlendMode blendMode;
+    ofBlendMode blendMode;
     float pct;
     
 };

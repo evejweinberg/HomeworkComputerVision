@@ -26,6 +26,7 @@ public:
     ofPoint bEnd;
     ofColor color;
     ofImage cloud;
+    ofImage HI;
 
     float pct;
     
