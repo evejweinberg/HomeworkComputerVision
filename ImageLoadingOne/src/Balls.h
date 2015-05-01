@@ -9,7 +9,7 @@
 #ifndef __ImageLoadingOne__Balls__
 #define __ImageLoadingOne__Balls__
 #include "ofMain.h"
-
+#include "ofxOpenCv.h"
 
 #include <stdio.h>
 
@@ -29,7 +29,11 @@ public:
 
     float pct;
     
-
+    ofVideoGrabber		videoGrabber;
+    
+    ofxCvColorImage		colorImg;
+    
+    ofxCvGrayscaleImage 	grayImage;
     
     
 

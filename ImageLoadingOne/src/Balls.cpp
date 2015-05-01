@@ -11,13 +11,19 @@
 
 //-----------------------------------------------------------------------
 void Balls::setup(){
+    
+    videoGrabber.initGrabber(ofGetWidth(), ofGetHeight());
+    colorImg.allocate(videoGrabber.width, videoGrabber.height);
+    grayImage.allocate(videoGrabber.width, videoGrabber.height);
+
 
 aStart.set(ofGetWidth()/2,ofGetHeight()+500);
 bEnd.set(ofGetWidth()/2, -1200);
 pct = 0;
     
     cloud.loadImage("cloud.png");
-  
+    
+    
 
 
 }
@@ -31,9 +37,24 @@ void Balls::update(){
         pct = 0;
     }
     
+    
+    videoGrabber.update();
+    
+    bool bNewFrame = false;
+    unsigned char * pixels;
+    
+    pixels = videoGrabber.getPixels();
+    bNewFrame = videoGrabber.isFrameNew();
+    
+    if (bNewFrame){
+        colorImg.setFromPixels(pixels, videoGrabber.width, videoGrabber.height);
+        
+        grayImage = colorImg;
+        grayImage.mirror(false, true);
+    
 
 }
-
+}
 
 //-----------------------------------------------------------------------
 void Balls::draw(){
@@ -74,6 +95,17 @@ void Balls::draw(){
     ofCircle(mixPt, 100);
     
     ofSetHexColor(0xffffff);
+    
+    
+    grayImage.draw(0,0, ofGetWidth(), ofGetHeight());
+    
+    IplImage* eig = cvCreateImage( cvGetSize(grayImage.getCvImage()), 32, 1 );
+    IplImage* temp = cvCreateImage( cvGetSize(grayImage.getCvImage()), 32, 1 );
+    
+    cvReleaseImage( &eig );
+    cvReleaseImage( &temp );
+    
+    grayImage.draw(0,0, ofGetWidth(), ofGetHeight());
     
     
     
