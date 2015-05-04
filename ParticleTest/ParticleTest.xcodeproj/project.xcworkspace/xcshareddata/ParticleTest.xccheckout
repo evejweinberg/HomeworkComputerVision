@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>EB95215A-F38F-4BC2-86D7-3FDE0626D886</string>
+	<string>8987A15C-68D0-4242-AA20-0B9FEAB1B181</string>
 	<key>IDESourceControlProjectName</key>
-	<string>ImageLoadingOne</string>
+	<string>ParticleTest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F2E287F906E82AC7E90B8946F4A3F1829C478391</key>
 		<string>https://github.com/evejweinberg/SFPC_Homework</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ImageLoadingOne/ImageLoadingOne.xcodeproj</string>
+	<string>ParticleTest/ParticleTest.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F2E287F906E82AC7E90B8946F4A3F1829C478391</key>
